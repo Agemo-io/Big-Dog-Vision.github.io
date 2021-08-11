@@ -11,27 +11,30 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-82XVH64DD5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-82XVH64DD5');
     </script>
 
     <script type="text/javascript">
-        function handleIt(txt) {   // txt == content of form input
-            alert("Entered value: " + txt);
+        function handleIt(txt) {
+            window.open('mailto:info@bigdogvision.com');
         }
     </script>
 </head>
 
 <body>
     <img src="assets/coming_soon.gif" alt="Big Dogs" width="100%" />
-    <div>
-        <form name="myform" action="javascript:handleIt(lastname.value)">
-            <input type="text" placeholder="EMAIL ADDRESS HERE" name="lastname" id="lastname" maxlength="40">
-            <input name="Submit" type="submit" value="Woof" />
+    <div class="center">
+        <form id="form1" action="javascript:handleIt()">
+            <button type="submit" form="form1" class="btn">WOOF</button>
         </form>
     </div>
 </body>
+
 
 </html>
